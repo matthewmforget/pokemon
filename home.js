@@ -1,7 +1,7 @@
 let cursors;
 let texts = [
-    "Welcome to my page.",
-    "This is a fun little Pokemon style game I made.",
+    "Hit Enter / Return to continue.",
+    "Welcome to my personal website! This is a fun little Pokemon style version I made.",
     "To move around, use the arrow keys on your keyboard.",
     "Follow the dirt path upward, and approach me, then press Enter to talk to me!",
     "See you then!"

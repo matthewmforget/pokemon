@@ -30,7 +30,7 @@ class BattleScene extends Phaser.Scene {
         this.load.spritesheet('me', './assets/ACharDown.png', { frameWidth: 24, frameHeight: 24});
         this.load.image('menu_box', './assets/menu_box.png');
         this.load.image('speech', './assets/speech_bubble.png');
-        // this.load.audio('battleMusic', './assets/audio/battleMusic.mp3');
+        this.load.audio('run', './assets/audio/run.mp3');
     }
 
     create() {
@@ -44,6 +44,9 @@ class BattleScene extends Phaser.Scene {
 
         // Set up enter sound
         this.enterSound = this.sound.add('enter', { loop: false, volume: 0.5 });
+
+        // Set up run sound
+        this.runSound = this.sound.add('run', { loop: false, volume: 0.5 });
 
         // After 3 seconds, play battle music
         this.time.delayedCall(2580, () => {
@@ -175,6 +178,8 @@ class BattleScene extends Phaser.Scene {
     }
 
     runAction() {
+        this.runSound.play();
+        this.battleMusic.stop();
         this.scene.start('PokemonScene');
     }
 

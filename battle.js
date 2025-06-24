@@ -167,7 +167,7 @@ class BattleScene extends Phaser.Scene {
     }
 
     resumeAction() {
-        window.open('./assets/ML_resume.pdf', '_blank');
+        window.open('./assets/ML_Engineer.pdf', '_blank');
     }
 
     aboutmeAction() {
